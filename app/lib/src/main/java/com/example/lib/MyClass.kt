@@ -22,7 +22,11 @@ fun main() {
     //Solo si es mayor de edad
     //string? : es string o nulo
 
+<<<<<<< HEAD
     println("Pon una edad")
+=======
+//    println("Pon una edad")
+>>>>>>> 039c7d7f1bc7bbe9c4c7e3896bd9851eb3a3e3b1
     val input = readlnOrNull()
     val age = input?.toIntOrNull()
 //    if (age == null) {
@@ -34,7 +38,11 @@ fun main() {
 //    }
 
     //FOR
+<<<<<<< HEAD
     //ctl k ctrl c  /q   cometar/descomentar
+=======
+    //ctl k ctrl c  /q
+>>>>>>> 039c7d7f1bc7bbe9c4c7e3896bd9851eb3a3e3b1
     for (i in 1..10) {
         println(i)
     }
@@ -44,6 +52,7 @@ fun main() {
         println(i)
 
 
+<<<<<<< HEAD
     for (i in 100 downTo 0 step 10)
 
 
@@ -60,10 +69,29 @@ fun main() {
         println("El contador es menor que 20")
         counter++
     }
+=======
+    for (i in 100 downTo 0 step 10 )
+
+
+//WHEN
+when(age){
+    null -> println("Ingresa un numero valido")
+    in 18 .. Integer.MAX_VALUE -> println("Entrale")
+    else -> println("No puedes pasar")
+
+}
+
+var counter : Int = 12
+while(counter <20){
+    println("El contador es menor que 20")
+    counter++
+}
+>>>>>>> 039c7d7f1bc7bbe9c4c7e3896bd9851eb3a3e3b1
 
 //DO WHILE : ejecuta primero el bloque de codigo y despues evalua la condicion
 //operadores logicos: && ||
 // operador aritmetico + - * %
+<<<<<<< HEAD
     do {
         println("El contador vale menos de 30")
         counter++
@@ -186,3 +214,15 @@ fun main() {
 //git log( interfaz), git switch main, git switch feature//inicio,ahora con main x2 sigue git cherry-pick hash,
 // //git push origin main sigo lo que me falta y la api y todo y hago un  merge
 //es mala practica el cherry-pick
+=======
+do{
+    println("El contador vale menos de 30")
+    counter++
+}
+while(counter <30)
+
+}
+
+//Determinar si un numero ingresado por el usuario es un numero primo
+// git init, git status. git add .
+>>>>>>> 039c7d7f1bc7bbe9c4c7e3896bd9851eb3a3e3b1
