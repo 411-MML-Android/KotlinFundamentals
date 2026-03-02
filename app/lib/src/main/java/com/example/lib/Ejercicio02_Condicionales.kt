@@ -1,4 +1,4 @@
-package com.pjasoft.lib
+package com.pjasoft.lib     //Paso 1: Paquete
 
 // EJERCICIO 2: Condicionales (if / else)
 // ========================================
@@ -16,16 +16,21 @@ package com.pjasoft.lib
 // 60 -> Suficiente
 // 85 -> Notable
 
-fun main() {
+fun main() {    //Paso 2: Inicio programa
+    // Paso 3: Creamos la lista de calificaciones
     val calificaciones = listOf(45, 72, 91, 60, 85) //kotlin detecta que es int y si pones decimal tambien detecta
     // Se crea una lista llamada calificaciones.
     // listOf crea una lista fija (no se puede modificar).
     // si quieres asegurar decimal "como forzar": val calificaciones: List<Double> = listOf(45.0, 72.5, 91.3, 60.0, 85.8)
 
+    // Paso 4: Recorremos la lista con un ciclo for
     for (cal in calificaciones) {
         // Recorre cada elemento de la lista.
         // En cada vuelta del ciclo, el número se guarda en la variable cal.
 
+
+        // Paso 5: Usamos una expresión if para clasificar
+        // En Kotlin, el if puede devolver un valor.
         val nivel = if (cal < 60) {  // Si la calificación es menor que 60
             "Reprobado"
         } else if (cal < 70) {    // Si no fue menor a 60, pero sí es menor a 70 (60-69)
@@ -41,7 +46,7 @@ fun main() {
             // TODO: Completa
             "Excelente"
         }
-
+        // Paso 6: Imprimimos el resultado
         println("$cal -> $nivel")
     }
 }
