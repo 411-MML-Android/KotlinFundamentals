@@ -1,4 +1,4 @@
-package com.pjasoft.lib
+package com.pjasoft.lib  //Paso 1: Paquete
 
 // EJERCICIO 4: Bucle for con rangos
 // ========================================
@@ -11,15 +11,18 @@ package com.pjasoft.lib
 // ...
 // 7 x 10 = 70
 
-fun main() {
+fun main() {    //Paso 2: Inicio programa
+    // Paso 3: Se guarda el número base
     val numero = 7   // Guardamos el número del que queremos la tabla
 
     // TODO: Usa un for con el rango 1..10 e imprime cada linea
+    // Paso 4: Se crea el rango
     for (i in 1..10) {
         //repetición
         // i va desde 1 hasta 10 ,      1..10 es un rango (incluye el 10)
 
         // Imprime: "$numero x $i = ${numero * i}"
+        // Paso 5: Se imprime cada línea (resultado)
         println("$numero x $i = ${numero * i}")
         // numero: 7
         // i: el número actual del ciclo
