@@ -1,4 +1,4 @@
-package com.pjasoft.lib
+package com.pjasoft.lib  //Paso 1: Paquete
 
 // EJERCICIO 3: Expresion when
 // ========================================
@@ -15,10 +15,15 @@ package com.pjasoft.lib
 // 7 -> Domingo
 // 9 -> Dia no valido
 
-fun main() {
+fun main() {    //Paso 2: Inicio del programa
+
+    // Paso 3: Creamos la lista de números a evaluar
     val dias = listOf(1, 4, 7, 9, 3, 6)
 
+    // Paso 4: Recorremos la lista con un for
     for (d in dias) {
+        // Paso 5: Usamos la expresión when
+        // "when" funciona como un switch mejorado.
         val nombre = when (d) {
             1 -> "Lunes"
             2 -> "Martes"
@@ -31,6 +36,7 @@ fun main() {
             else -> "Dia no valido"  // Si no es 1-7 es día inválido
         }
 
+        // Paso 4: Imprimimos el resultado
         println("$d -> $nombre")
     }
 }
